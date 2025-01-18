@@ -51,7 +51,7 @@ def play_audio(audio_array, sample_rate=24000):
 
 EXAMPLE = """
 import main as m
-vp = m.build_voicepack(9)
+vp = m.build_voicepack(0)
 audio, _ = m.generate_audio(vp, "Testing audio")
 m.play_audio(audio)
 """
