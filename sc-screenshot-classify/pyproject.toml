@@ -6,6 +6,8 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "fastai==2.7.18",
+    "pillow>=11.1.0",
+    "scikit-learn>=1.6.1",
     "torch==2.5",
     "torchvision>=0.20.0",
 ]

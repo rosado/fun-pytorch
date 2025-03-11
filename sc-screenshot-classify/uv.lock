@@ -989,6 +989,8 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "fastai" },
+    { name = "pillow" },
+    { name = "scikit-learn" },
     { name = "torch", version = "2.5.0", source = { registry = "https://download.pytorch.org/whl/cu124" }, marker = "platform_machine == 'aarch64' and sys_platform == 'linux'" },
     { name = "torch", version = "2.5.0", source = { registry = "https://pypi.org/simple" }, marker = "sys_platform != 'linux' and sys_platform != 'win32'" },
     { name = "torch", version = "2.5.0+cu124", source = { registry = "https://download.pytorch.org/whl/cu124" }, marker = "(platform_machine != 'aarch64' and sys_platform == 'linux') or sys_platform == 'win32'" },
@@ -1000,6 +1002,8 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "fastai", specifier = "==2.7.18" },
+    { name = "pillow", specifier = ">=11.1.0" },
+    { name = "scikit-learn", specifier = ">=1.6.1" },
     { name = "torch", marker = "sys_platform != 'linux' and sys_platform != 'win32'", specifier = "==2.5" },
     { name = "torch", marker = "sys_platform == 'linux' or sys_platform == 'win32'", specifier = "==2.5", index = "https://download.pytorch.org/whl/cu124" },
     { name = "torchvision", marker = "sys_platform != 'linux' and sys_platform != 'win32'", specifier = ">=0.20.0" },
