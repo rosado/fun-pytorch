@@ -1,0 +1,1 @@
+ uv run --with jupyter jupyter lab --port 8882
